@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир котиков</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(135deg, #fff0f5, #f0f8ff);
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            font-size: 2.5rem;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cats-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .cat-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .cat-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .cat-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background: #ffd6e7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ff6b6b;
+            font-size: 3rem;
+        }
+        
+        .cat-name {
+            padding: 15px;
+            font-weight: bold;
+            color: #5a3d5c;
+        }
+        
+        .fun-fact {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .footer {
+            margin-top: 30px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+        
+        .heart {
+            color: #ff6b6b;
+            animation: heartbeat 1.5s infinite;
+        }
+        
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            14% { transform: scale(1.3); }
+            28% { transform: scale(1); }
+            42% { transform: scale(1.3); }
+            70% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>😻 Мир милых котиков 😻</h1>
+        
+        <div class="cats-gallery">
+            <div class="cat-card">
+                <div class="cat-img">😺</div>
+                <div class="cat-name">Рыжик</div>
+            </div>
+            
+            <div class="cat-card">
+                <div class="cat-img">😸</div>
+                <div class="cat-name">Снежок</div>
+            </div>
+            
+            <div class="cat-card">
+                <div class="cat-img">😹</div>
+                <div class="cat-name">Пушистик</div>
+            </div>
+            
+            <div class="cat-card">
+                <div class="cat-img">😻</div>
+                <div class="cat-name">Мурзик</div>
+            </div>
+        </div>
+        
+        <div class="fun-fact">
+            <h2>🐾 Факт о котиках</h2>
+            <p>Кошки могут издавать более 100 различных звуков, а собаки - только около 10!</p>
+        </div>
+        
+        <div class="footer">
+            Сделано с <span class="heart">❤️</span> для любителей котиков
+        </div>
+    </div>
+</body>
+</html>
